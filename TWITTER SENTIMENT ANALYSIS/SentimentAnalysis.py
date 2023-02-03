@@ -26,3 +26,9 @@ sentiment = F.udf(getSentiment, StringType())
 subjectivity_tweets = raw_tweets.withColumn('subjectivity', subjectivity(col("processed_text")))
 polarity_tweets = subjectivity_tweets.withColumn("polarity", polarity(col("processed_text")))
 sentiment_tweets = polarity_tweets.withColumn("sentiment", sentiment(col("polarity")))
+
+def write_row_in_mongo(df, epoch_id):
+    mongoURL = "mongodb+srv://Lorena:<Password>@cluster0.9psdq.mongodb.net/<database>.<collection>" \
+               "?retryWrites=true&w=majority "
+    df.write.format("mongo").mode("append").option("uri", mongoURL).save()
+    pass
