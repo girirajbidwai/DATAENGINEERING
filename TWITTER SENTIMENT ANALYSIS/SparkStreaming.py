@@ -30,4 +30,16 @@ mySchema = StructType([StructField("text", StringType(), True)])
     # Get only the "text" from the information we receive from Kafka. The text is the tweet produce by a user
     values = df.select(from_json(df.value.cast("string"), mySchema).alias("tweet"))
     
-  
+#Spark Session with connection to MongoDB 
+spark = SparkSession \
+        .builder \
+        .appName("TwitterSentimentAnalysis") \
+        .config("spark.mongodb.input.uri",
+                "mongodb+srv://<Username>:<Password>@cluster0.9psdq.mongodb.net/<database_name>.<database_collection>"
+                "?retryWrites=true&w=majority") \
+        .config("spark.mongodb.output.uri",
+                "mongodb+srv://<Username>:<Password>@cluster0.9psdq.mongodb.net/<database_name>.<database_collection>"
+                "?retryWrites=true&w=majority") \
+        .config("spark.jars.packages", "org.mongodb.spark:mongo-spark-connector_2.12:3.0.1") \
+        .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2") \
+        .getOrCreate()
