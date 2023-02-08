@@ -78,5 +78,7 @@ The strength of positive and negative polarities can vary depending on the situa
 Subjectivity refers to the degree to which a person is personally involved in an object. What matters the most here are personal connections and individual experiences with that object, which may or may not differ from someone else’s point of view. For example: ‘I’m very happy with my new smartphone because it has the highest performance available on the market.’ Similarly to polarity, strong subjectivity may be negative or positive. The statement here is clearly subjective because the user is actually talking about his experience and how he feels about an object.
 
 Sentiment analysis tools must be able to distinguish between both polarity and subjectivity in order to analyze users’ opinions correctly. An opinion can have a high degree of subjectivity if it’s expressed as a personal experience, whereas a low degree may indicate someone else’s viewpoint on something else. Sentiments can also have different levels of polarity throughout different ways of communication – e-mails, chats or other posts might be either strongly positive, negative or; in some other cases, they might have even a neutral polarity.
+![1_aWeFkMEnhWQB2gznyCzHJw](https://user-images.githubusercontent.com/95566572/217513195-995d10f1-394f-4ec3-b052-50898c6060cf.png)
+
 
 
