@@ -1,1 +1,1 @@
-###1.Establishing connection with EC2 instance
+###### Establishing connection with EC2 using  GIT BASH FROM LOCAL MACHINE
