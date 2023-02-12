@@ -12,4 +12,4 @@
 #### Confluent on Docker
 
 ###### 1.mkdir docker-compose.yml
-###### 2.docker-compose -f docker-compose.yml up
+###### 2.docker-compose -f docker-compose.yml up (This will install all the required images from docker hub of confluent)
