@@ -1,7 +1,7 @@
 #### Establishing connection with EC2 using  GIT BASH FROM LOCAL MACHINE
 
-1.ssh -i Downloads/<key-pair.pem>{OS}@Public IPv4 address
-2.sudo -su (switching to root user)
+###### 1.ssh -i Downloads/<key-pair.pem>{OS}@Public IPv4 address
+###### 2.sudo -su (switching to root user)
 
 #### Installing Docker and Docker-compose on EC2 Instance
 
