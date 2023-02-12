@@ -12,4 +12,4 @@
 #### Confluent on Docker
 
 ###### 1.mkdir docker-compose.yml
-###### 2.
+###### 2.docker-compose -f docker-compose.yml up
