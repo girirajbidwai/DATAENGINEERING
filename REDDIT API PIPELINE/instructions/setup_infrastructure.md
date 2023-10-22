@@ -4,8 +4,6 @@ We'll use an infrastructure-as-code tool called `Terraform`. This will allow us 
 
 >Note that Terraform works with multiple cloud resources, not just AWS. 
 
-If you want a quick introduction, check [this](https://learn.hashicorp.com/terraform?utm_source=terraform_io) tutorial out.
-
 We'll use Terraform to create:
 
 * **Redshift Cluster**
